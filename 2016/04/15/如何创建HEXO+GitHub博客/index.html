@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Z哥</title>
+  <title>如何创建HEXO+GitHub博客 | Z哥</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -220,88 +220,60 @@
         <!-- // End height spacing helper -->
 
         <!-- ============================ END Hero Image =========================== -->
-      <!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/04/15/hello-world/">Hello World</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2016-04-15T05:13:39.000Z" itemprop="datePublished">
           2016-04-15
       </time>
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new p
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/04/15/hello-world/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>如何创建HEXO+GitHub博客</h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/04/15/如何创建HEXO+GitHub博客/">如何创建HEXO+GitHub博客</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2016-04-15T05:13:39.000Z" itemprop="datePublished">
-          2016-04-15
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        如何创建HEXO+GitHub博客
-配置环境安装Node安装Git申请github帐号
-安装Hexo1.创建一个文件夹,如blog,用于存放hexo的配置文件。2.进入新建的文件夹blog下面，安装Hexo执行如下命令安装Hexo：sudo npm install-g hexo初始化hexo：hexo init生成静态页面hexo generate本地启动hexo server浏览器输入http://localhost:4000可以看到
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/04/15/如何创建HEXO+GitHub博客/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="如何创建HEXO-GitHub博客"><a href="#如何创建HEXO-GitHub博客" class="headerlink" title="如何创建HEXO+GitHub博客"></a>如何创建HEXO+GitHub博客</h1><hr>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p><a href="https://nodejs.org" target="_blank" rel="external">安装Node</a><br>安装Git<br><a href="https://github.com/" target="_blank" rel="external">申请github帐号</a></p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>1.创建一个文件夹,如blog,用于存放hexo的配置文件。<br>2.进入新建的文件夹blog下面，安装Hexo<br>执行如下命令安装Hexo：<br>sudo npm install-g hexo<br>初始化hexo：<br>hexo init<br>生成静态页面<br>hexo generate<br>本地启动<br>hexo server<br>浏览器输入<a href="http://localhost:4000可以看到配置在本地的界面" target="_blank" rel="external">http://localhost:4000可以看到配置在本地的界面</a></p>
+<h2 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h2><p>1.在你的github上建立新的Repository，仓库名必须为【your_user_name.github.io】<br>2.配置_config.yml文件，这个文件在新建的blog文件夹里面能找到<br>vim _config.yml</p>
+<p>deploy:<br>type: git<br>repo:<a href="https://github.com/leopardpan/leopardpan.github.io.git" target="_blank" rel="external">https://github.com/leopardpan/leopardpan.github.io.git</a><br>branch:master</p>
+<p>注：repo:后面也可以跟SSH Keys，区别：https链接要每次都输入帐号密码，SSH Keys不需要</p>
+<p>然后执行命令：<br>npm install hexo-deployer-git –save<br>配置命令：<br>hexo deploy<br>到此就可以了</p>
+<p>每次部署的步骤，可按以下三步来进行。<br><a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">原文链接</a></p>
+<p><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">Markdown语法参考链接</a></p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
         <nav class="pagination" role="pagination">
-          
-          
-        </nav>
+    
+    <a class="pull-left" href="/2016/04/15/hello-world/" style="float: left;">
+        ← Hello World
+    </a>
+    
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/04/15/如何创建HEXO+GitHub博客/" data-title="如何创建HEXO+GitHub博客" data-url="http://yoursite.com/2016/04/15/如何创建HEXO+GitHub博客/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>让我们成长，一起成长</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
