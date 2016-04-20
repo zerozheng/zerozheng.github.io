@@ -11,31 +11,19 @@
     
 
     
-    <meta name="description" content="科学著作
-
-[ ] 康德 《纯粹理性批判》
-[ ] 牛顿 《自然哲学的数学原理》
-[x] 霍金 《时间简史》
-[ ]">
+    <meta name="description" content="TableView侧滑删除
+1234567891011- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath &amp;#123;&amp;#125;- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Z哥">
-<meta property="og:url" content="http://yoursite.com/2016/04/15/科学著作/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/04/15/TableView侧滑删除/index.html">
 <meta property="og:site_name" content="Z哥">
-<meta property="og:description" content="科学著作
-
-[ ] 康德 《纯粹理性批判》
-[ ] 牛顿 《自然哲学的数学原理》
-[x] 霍金 《时间简史》
-[ ]">
-<meta property="og:updated_time" content="2016-04-18T12:04:18.000Z">
+<meta property="og:description" content="TableView侧滑删除
+1234567891011- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath &amp;#123;&amp;#125;- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editi">
+<meta property="og:updated_time" content="2016-04-19T09:29:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Z哥">
-<meta name="twitter:description" content="科学著作
-
-[ ] 康德 《纯粹理性批判》
-[ ] 牛顿 《自然哲学的数学原理》
-[x] 霍金 《时间简史》
-[ ]">
+<meta name="twitter:description" content="TableView侧滑删除
+1234567891011- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath &amp;#123;&amp;#125;- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editi">
 
     
     <link rel="alternative" href="/atom.xml" title="Z哥" type="application/atom+xml">
@@ -95,7 +83,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/04/15/科学著作/" title="" itemprop="url"></a>
+      <a href="/2016/04/15/TableView侧滑删除/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
        
@@ -111,17 +99,13 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#科学著作"><span class="toc-number">1.</span> <span class="toc-text">科学著作</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TableView侧滑删除"><span class="toc-number">1.</span> <span class="toc-text">TableView侧滑删除</span></a></li></ol>
 		
 		</div>
 		
-		<h1 id="科学著作"><a href="#科学著作" class="headerlink" title="科学著作"></a>科学著作</h1><hr>
-<ul>
-<li>[ ] 康德 《纯粹理性批判》</li>
-<li>[ ] 牛顿 《自然哲学的数学原理》</li>
-<li>[x] 霍金 《时间简史》</li>
-<li>[ ] </li>
-</ul>
+		<h1 id="TableView侧滑删除"><a href="#TableView侧滑删除" class="headerlink" title="TableView侧滑删除"></a>TableView侧滑删除</h1><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (NSArray&lt;UITableViewRowAction *&gt; *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>ios9以下要添加另外一个方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -134,7 +118,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2016/04/15/科学著作/" data-title="Z哥" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2016/04/15/TableView侧滑删除/" data-title="Z哥" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -147,17 +131,9 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/04/15/ios知名网站/" title="">
-  <strong>上一篇：</strong><br/>
-  <span>
-  (no title)</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/04/15/如何创建HEXO+GitHub博客/"  title="">
+<a href="/2016/04/15/ios跳转到系统设置/"  title="">
  <strong>下一篇：</strong><br/> 
  <span>(no title)
 </span>
@@ -174,7 +150,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#科学著作"><span class="toc-number">1.</span> <span class="toc-text">科学著作</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TableView侧滑删除"><span class="toc-number">1.</span> <span class="toc-text">TableView侧滑删除</span></a></li></ol>
  
   </div>
 
