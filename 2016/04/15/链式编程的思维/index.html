@@ -11,31 +11,25 @@
     
 
     
-    <meta name="description" content="科学著作
-
-[ ] 康德 《纯粹理性批判》
-[ ] 牛顿 《自然哲学的数学原理》
-[x] 霍金 《时间简史》
-[ ]">
+    <meta name="description" content="链式编程的思维
+链式编程的主要思维是通过block执行后返回对象，再通过对象的点语法获取block，再进行block执行，依次反复…
+##示例1.创建对象，这个对象拥有一个属性，以及两个方法。两个方法的返回值是block，而且block的返回值都是对象本身；同时，这两个方法可以通过点语法访问。
+123456789101112131415161718192021222324252627282930#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Z哥">
-<meta property="og:url" content="http://yoursite.com/2016/04/15/科学著作/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/04/15/链式编程的思维/index.html">
 <meta property="og:site_name" content="Z哥">
-<meta property="og:description" content="科学著作
-
-[ ] 康德 《纯粹理性批判》
-[ ] 牛顿 《自然哲学的数学原理》
-[x] 霍金 《时间简史》
-[ ]">
-<meta property="og:updated_time" content="2016-04-18T12:04:18.000Z">
+<meta property="og:description" content="链式编程的思维
+链式编程的主要思维是通过block执行后返回对象，再通过对象的点语法获取block，再进行block执行，依次反复…
+##示例1.创建对象，这个对象拥有一个属性，以及两个方法。两个方法的返回值是block，而且block的返回值都是对象本身；同时，这两个方法可以通过点语法访问。
+123456789101112131415161718192021222324252627282930#">
+<meta property="og:updated_time" content="2016-04-20T11:07:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Z哥">
-<meta name="twitter:description" content="科学著作
-
-[ ] 康德 《纯粹理性批判》
-[ ] 牛顿 《自然哲学的数学原理》
-[x] 霍金 《时间简史》
-[ ]">
+<meta name="twitter:description" content="链式编程的思维
+链式编程的主要思维是通过block执行后返回对象，再通过对象的点语法获取block，再进行block执行，依次反复…
+##示例1.创建对象，这个对象拥有一个属性，以及两个方法。两个方法的返回值是block，而且block的返回值都是对象本身；同时，这两个方法可以通过点语法访问。
+123456789101112131415161718192021222324252627282930#">
 
     
     <link rel="alternative" href="/atom.xml" title="Z哥" type="application/atom+xml">
@@ -95,7 +89,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/04/15/科学著作/" title="" itemprop="url"></a>
+      <a href="/2016/04/15/链式编程的思维/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
        
@@ -111,18 +105,22 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#科学著作"><span class="toc-number">1.</span> <span class="toc-text">科学著作</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#链式编程的思维"><span class="toc-number">1.</span> <span class="toc-text">链式编程的思维</span></a></li></ol>
 		
 		</div>
 		
-		<h1 id="科学著作"><a href="#科学著作" class="headerlink" title="科学著作"></a>科学著作</h1><hr>
-<ul>
-<li>[ ] 康德 《纯粹理性批判》</li>
-<li>[ ] 牛顿 《自然哲学的数学原理》</li>
-<li>[x] 霍金 《时间简史》</li>
-<li>[ ] </li>
-</ul>
-  
+		<h1 id="链式编程的思维"><a href="#链式编程的思维" class="headerlink" title="链式编程的思维"></a>链式编程的思维</h1><hr>
+<p>链式编程的主要思维是通过block执行后返回对象，再通过对象的<code>点语法</code>获取block，再进行block执行，依次反复…</p>
+<p>##示例<br>1.创建对象，这个对象拥有一个属性，以及两个方法。两个方法的返回值是block，而且block的返回值都是对象本身；同时，这两个方法可以通过<code>点语法</code>访问。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">#import &lt;Foundation/Foundation.h&gt;</span><br><span class="line"></span><br><span class="line">@interface ZZCalculator : NSObject</span><br><span class="line"></span><br><span class="line">@property (nonatomic, assign)int result;</span><br><span class="line"></span><br><span class="line">- (ZZCalculator *(^)(int))add;</span><br><span class="line">- (ZZCalculator *(^)(int))minus;</span><br><span class="line"></span><br><span class="line">@end</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#import &quot;ZZCalculator.h&quot;</span><br><span class="line"></span><br><span class="line">@implementation ZZCalculator</span><br><span class="line"></span><br><span class="line">- (ZZCalculator *(^)(int))add &#123;</span><br><span class="line">    return ^(int value)&#123;</span><br><span class="line">        _result+=value;</span><br><span class="line">        return self;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line">- (ZZCalculator *(^)(int))minus &#123;</span><br><span class="line">    return ^(int value)&#123;</span><br><span class="line">        _result-=value;</span><br><span class="line">        return self;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<ol>
+<li>创建类，这个类提供一个类方法。该方法含有一个block参数作为回调。回调的时候会接受ZZCalculator对象</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#import &lt;Foundation/Foundation.h&gt;</span><br><span class="line">@class ZZCalculator;</span><br><span class="line"></span><br><span class="line">@interface ZZMake : NSObject</span><br><span class="line"></span><br><span class="line">+ (int)makeCalculator:(void(^)(ZZCalculator *calculator))block;</span><br><span class="line"></span><br><span class="line">@end</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#import &quot;ZZMake.h&quot;</span><br><span class="line">#import &quot;ZZCalculator.h&quot;</span><br><span class="line"></span><br><span class="line">@implementation ZZMake</span><br><span class="line"></span><br><span class="line">+ (int)makeCalculator:(void(^)(ZZCalculator *calculator))block &#123;</span><br><span class="line">    ZZCalculator *cal = [[ZZCalculator alloc] init];</span><br><span class="line">    block(cal);</span><br><span class="line">    return cal.result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<ol>
+<li>由<code>makeCalculator:</code>类方法回调返回的实例对象<code>calculator</code>，通过点语法调用add方法返回block，然后block通过<code>()</code>执行后又返回<code>calculator</code>，依次反复。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- (void)viewDidLoad &#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">    </span><br><span class="line">    int result = [ZZMake makeCalculator:^(ZZCalculator *calculator) &#123;</span><br><span class="line">        calculator.add(1).add(2);</span><br><span class="line">    &#125;];</span><br><span class="line">    </span><br><span class="line">    NSLog(@&quot;result %d&quot;,result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -134,7 +132,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2016/04/15/科学著作/" data-title="Z哥" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2016/04/15/链式编程的思维/" data-title="Z哥" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -148,21 +146,13 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2016/04/15/TableView侧滑删除/" title="">
+ <a href="/2016/04/15/ios跳转到系统设置/" title="">
   <strong>上一篇：</strong><br/>
   <span>
   (no title)</span>
 </a>
 </div>
 
-
-<div class="next">
-<a href="/2016/04/15/如何创建HEXO+GitHub博客/"  title="">
- <strong>下一篇：</strong><br/> 
- <span>(no title)
-</span>
-</a>
-</div>
 
 </nav>
 
@@ -174,7 +164,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#科学著作"><span class="toc-number">1.</span> <span class="toc-text">科学著作</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#链式编程的思维"><span class="toc-number">1.</span> <span class="toc-text">链式编程的思维</span></a></li></ol>
  
   </div>
 
